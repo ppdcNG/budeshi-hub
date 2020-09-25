@@ -206,7 +206,7 @@
                                             placeholder=""
                                         >
                                         <label for="title">Date of Engagement</label>
-                                        <input id="date" class="form-control mb-4" placeholder="">
+                                        <input id="engagement-date" class="form-control mb-4" placeholder="">
                                         <label>How did Engagement happen?</label>
                                         <select class="browser-default custom-select mb-4">
                                             <option value="" disabled>Choose option</option>
@@ -253,7 +253,7 @@
                                     <h5>Community Visit Report</h5>
                                     <form class="text-center border border-light p-5">
                                         <label for="title">Date of Visit</label>
-                                        <input id="date" class="form-control mb-4" placeholder="">
+                                        <input id="visit-date" class="form-control mb-4" placeholder="">
                                         <label>Status of Project</label>
                                         <select class="browser-default custom-select mb-4">
                                             <option value="" disabled>Choose option</option>
@@ -423,14 +423,8 @@
         <script type="text/javascript" src="../node_modules/mdbootstrap/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="../node_modules/mdbootstrap/js/mdb.min.js"></script>
         <script>
-            $("#year").datepicker({
-                format: "yyyy",
-                viewMode: "years", 
-                minViewMode: "years"
-            });
-
-            // File upload 
-            // $('.file-upload').file_upload();
+            $("#engagement-date").datepicker();
+            $("#visit-date").datepicker();
         </script>
     </body>
 </html>
