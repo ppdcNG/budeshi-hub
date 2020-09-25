@@ -84,16 +84,16 @@
                     <img src="https://en.as.com/en/imagenes/2020/07/07/football/1594128251_384220_noticia_normal.jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid">
                     <form class="md-form flex-center">
                         <div class="file-field">
-                          <div class="btn btn-primary btn-sm float-left">
-                            <span>Upload picture</span>
-                            <input type="file">
-                          </div>
+                            <div class="btn btn-primary btn-sm float-left">
+                                <span>Upload picture</span>
+                                <input type="file">
+                            </div>
                         </div>
-                      </form>
+                    </form>
                 </div>
                 <form class="text-center border border-light p-5">
                     <div class="form-row mb-4">
-                        <div class="col">
+                        <div class="col-md-6">
                             <label for="firstname">First name</label>
                             <input
                                 type="text"
@@ -102,7 +102,7 @@
                                 placeholder="First name"
                             >
                         </div>
-                        <div class="col">
+                        <div class="col-md-6">
                             <label for="lastname">Last name</label>
                             <input
                                 type="text"
@@ -113,11 +113,11 @@
                         </div>
                     </div>
                     <div class="form-row mb-4">
-                        <div class="col">
+                        <div class="col-md-6">
                             <label for="dob">Date of Birth</label>
                             <input id="dob" class="form-control" placeholder="Date of Birth">
                         </div>
-                        <div class="col">
+                        <div class="col-md-6">
                             <label for="gender">Gender</label>
                             <input
                                 type="text"
@@ -129,7 +129,7 @@
                     </div>
                     <h6 class="text-uppercase text-left">location</h6>
                     <div class="form-row mb-4">
-                        <div class="col">
+                        <div class="col-md-6">
                             <label for="lga">L.G.A</label>
                             <input
                                 type="text"
@@ -138,7 +138,7 @@
                                 placeholder="Local Government"
                             >
                         </div>
-                        <div class="col">
+                        <div class="col-md-6">
                             <label for="state">State</label>
                             <input
                                 type="text"
@@ -149,41 +149,140 @@
                         </div>
                     </div>
                     <div class="form-row mb-4 border border-light p-3">
-                        <div class="col">
+                        <div class="col-md-6">
                             <p class="text-left">Affiliations</p>
                             <section class="container">
-                                <ol>
+                                <ol id="affiliations">
                                     <li class="text-left">
                                         PPDC
-                                        <span class="col-8 float-right">
+                                        <span class="col-10 float-right">
                                             <i class="fas fa-check green-text"></i>
                                         </span>
                                     </li>
                                     <li class="text-left">
                                         CODE
-                                        <span class="col-8 float-right font-weight-small">
+                                        <span class="col-10 float-right font-weight-small">
                                             <i class="fas fa-times red-text"></i>
-                                            <em>This organization has not been verified. Click
-                                                <a href="./verify-org.html">here</a> to verify.
+                                            <em>
+                                                This organization has not been verified. Click
+                                                <a href="./verify-org.html">here</a>
+                                                to verify.
                                             </em>
                                         </span>
                                     </li>
                                 </ol>
                             </section>
                         </div>
-                        <div class="col">
-                            <form>
-                                <label for="affiliation">Add new</label>
-                                <input
-                                    type="text"
-                                    id="affiliation"
-                                    class="form-control"
-                                    placeholder="Add new"
-                                >
-                                <button class="btn btn-sm btn-rounded border-0 shadow">
-                                    <i class="fas fa-plus"></i>
-                                </button>
-                            </form>
+                        <div class="col-md-6">
+                            <p>Add new</p>
+                            <button
+                                type="button"
+                                class="btn btn-sm btn-rounded border-0 shadow"
+                                data-toggle="modal"
+                                data-target="#newOrgModal"
+                            >
+                                <i class="fas fa-plus"></i>
+                            </button>
+                            <!-- New org modal  -->
+                            <div
+                                class="modal fade"
+                                id="newOrgModal"
+                                tabindex="-1"
+                                role="dialog"
+                                aria-labelledby="exampleModalLabel"
+                                aria-hidden="true"
+                            >
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="newOrgModalLabel">Add new organisation</h5>
+                                            <button
+                                                type="button"
+                                                class="close"
+                                                data-dismiss="modal"
+                                                aria-label="Close"
+                                            >
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <label>Type of organisation</label>
+                                                <select class="browser-default custom-select mb-4">
+                                                    <option value="" disabled>Choose option</option>
+                                                    <option value="">Govt.</option>
+                                                    <option value="">CSO</option>
+                                                    <option value="">NGO</option>
+                                                    <option value="">Private Sector</option>
+                                                    <option value="">Media</option>
+                                                    <option value="">Professional Bodies</option>
+                                                </select>
+                                                <label for="name">Name of Organisation</label>
+                                                <input id="name" class="form-control mb-4" placeholder="Name of org.">
+                                                <div class="form-row mb-4 border border-light p-3">
+                                                    <p>Contact</p>
+                                                    <div class="form-row mb-4">
+                                                        <div class="col">
+                                                            <label for="email">Email</label>
+                                                            <input
+                                                                type="email"
+                                                                id="email"
+                                                                class="form-control"
+                                                                placeholder="Email"
+                                                            >
+                                                        </div>
+                                                        <div class="col">
+                                                            <label for="website">Website</label>
+                                                            <input
+                                                                type="text"
+                                                                id="website"
+                                                                class="form-control"
+                                                                placeholder="Website"
+                                                            >
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="form-group mt-2">
+                                                        <label for="address">Address</label>
+                                                        <textarea
+                                                            class="form-control rounded-0"
+                                                            id="address"
+                                                            rows="3"
+                                                            placeholder="Type here"
+                                                        ></textarea>
+                                                    </div>
+
+                                                    <div class="form-row mb-4">
+                                                        <div class="col">
+                                                            <label for="town">Town</label>
+                                                            <input
+                                                                type="text"
+                                                                id="town"
+                                                                class="form-control"
+                                                                placeholder="Enter Town"
+                                                            >
+                                                        </div>
+                                                        <div class="col">
+                                                            <label for="state">State</label>
+                                                            <input
+                                                                type="text"
+                                                                id="state"
+                                                                class="form-control"
+                                                                placeholder="State"
+                                                            >
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="flex-center">
+                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                    <button type="button" class="btn btn-custom-green">Save</button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- New modal  -->
                         </div>
                     </div>
                     <div class="text-right">
