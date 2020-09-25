@@ -1,0 +1,55 @@
+body {
+    background-color: #eee!important;
+    font-family: 'Comfortaa', cursive;
+}
+
+nav a {
+    color: #4f4f4f !important;
+}
+
+* .btn {
+    border-radius: 20px;
+}
+
+.btn-custom-green {
+    background-color: #45FFAF;
+    color: #000;
+}
+a.btn {
+    color: #000 !important;
+}
+a.btn.del {
+    color: #fff !important;
+}
+a.icon i {
+    padding: 5px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #d5d5d5
+}
+
+/*  */
+/* PROJECT DETAILS */
+.row-vh > div {
+    height: 100vh !important;
+}
+label {
+    float: left;
+}
+
+#report-navs .nav-item.nav-link {
+    background-color: #33B5E5;
+    color: #fff !important;
+}
+#report-navs .nav-item.nav-link.active {
+    background-color: #fff;
+    border-color: #33B5E5 !important;
+    color: #33B5E5 !important;
+}
+
+/*  */
+/* PROFILE */
+.avatar img {
+    width: 100px;
+    height: 90px;
+}

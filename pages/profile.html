@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Budeshi Hub</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <link rel="stylesheet" href="../node_modules/mdbootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../node_modules/mdbootstrap/css/mdb.min.css">
+        <link rel="stylesheet" href="../node_modules/mdbootstrap/css/style.css">
+        <link rel="stylesheet" href="../index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <!--Navbar -->
+            <nav class="mb-1 navbar navbar-expand-lg navbar-dark white">
+                <a class="navbar-brand h3 pb-0" href="../index.html">
+                    <img
+                        src="../budeshi-logo.png"
+                        width="40"
+                        alt="budeshi-logo"
+                        class="img-fluid"
+                    >
+                    budeshi hub
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent-333"
+                    aria-controls="navbarSupportedContent-333"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">
+                                Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light">
+                                <i class="fas fa-home"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                id="navbarDropdownMenuLink-333"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                                <a class="dropdown-item" href="#">Message 1</a>
+                                <a class="dropdown-item" href="#">Message 2</a>
+                                <a class="dropdown-item" href="#">Message 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="./profile.html">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--/.Navbar -->
+        </header>
+        <main class="container">
+            <div class="white mt-4">
+                <h6 class="text-left ml-5 text-uppercase pt-3">profile</h6>
+                <div class="avatar mx-auto white text-center my-5 pt-3">
+                    <img src="https://en.as.com/en/imagenes/2020/07/07/football/1594128251_384220_noticia_normal.jpg" alt="avatar mx-auto white" class="rounded-circle img-fluid">
+                    <form class="md-form flex-center">
+                        <div class="file-field">
+                          <div class="btn btn-primary btn-sm float-left">
+                            <span>Upload picture</span>
+                            <input type="file">
+                          </div>
+                        </div>
+                      </form>
+                </div>
+                <form class="text-center border border-light p-5">
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <label for="firstname">First name</label>
+                            <input
+                                type="text"
+                                id="firstname"
+                                class="form-control"
+                                placeholder="First name"
+                            >
+                        </div>
+                        <div class="col">
+                            <label for="lastname">Last name</label>
+                            <input
+                                type="text"
+                                id="lastname"
+                                class="form-control"
+                                placeholder="Last name"
+                            >
+                        </div>
+                    </div>
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <label for="dob">Date of Birth</label>
+                            <input id="dob" class="form-control" placeholder="Date of Birth">
+                        </div>
+                        <div class="col">
+                            <label for="gender">Gender</label>
+                            <input
+                                type="text"
+                                id="gender"
+                                class="form-control"
+                                placeholder="Gender"
+                            >
+                        </div>
+                    </div>
+                    <h6 class="text-uppercase text-left">location</h6>
+                    <div class="form-row mb-4">
+                        <div class="col">
+                            <label for="lga">L.G.A</label>
+                            <input
+                                type="text"
+                                id="lga"
+                                class="form-control"
+                                placeholder="Local Government"
+                            >
+                        </div>
+                        <div class="col">
+                            <label for="state">State</label>
+                            <input
+                                type="text"
+                                id="state"
+                                class="form-control"
+                                placeholder="State"
+                            >
+                        </div>
+                    </div>
+                    <div class="form-row mb-4 border border-light p-3">
+                        <div class="col">
+                            <p class="text-left">Affiliations</p>
+                            <section class="container">
+                                <ol>
+                                    <li class="text-left">
+                                        PPDC
+                                        <span class="col-8 float-right">
+                                            <i class="fas fa-check green-text"></i>
+                                        </span>
+                                    </li>
+                                    <li class="text-left">
+                                        CODE
+                                        <span class="col-8 float-right font-weight-small">
+                                            <i class="fas fa-times red-text"></i>
+                                            <em>This organization has not been verified. Click
+                                                <a href="./verify-org.html">here</a> to verify.
+                                            </em>
+                                        </span>
+                                    </li>
+                                </ol>
+                            </section>
+                        </div>
+                        <div class="col">
+                            <form>
+                                <label for="affiliation">Add new</label>
+                                <input
+                                    type="text"
+                                    id="affiliation"
+                                    class="form-control"
+                                    placeholder="Add new"
+                                >
+                                <button class="btn btn-sm btn-rounded border-0 shadow">
+                                    <i class="fas fa-plus"></i>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <button class="btn btn-custom-green col-3 my-4 btn-md">save</button>
+                    </div>
+                </form>
+            </div>
+        </main>
+        <br>
+        <br>
+        <br>
+        <footer class="page-footer font-small white text-dark pt-5 mt-5">
+            <div class="container">
+                <!-- Grid row-->
+                <div class="row">
+                    <div class="col-md-12 flex-center">
+                        <h5 class="mr-md-5 mr-3">
+                            <img
+                                src="../budeshi-logo.png"
+                                width="40"
+                                alt="budeshi-logo"
+                                class="img-fluid"
+                            >
+                            budeshi hub
+                        </h5>
+                    </div>
+                    <div class="col-md-12">
+                        <hr style="border-width: 5px;">
+                    </div>
+                    <div class="col-md-12 flex-center">
+                        <div class="mb-5">
+                            <a class="gplus-ic icon">
+                                <i class="fab fa-google-plus-g fa-lg white-text mr-md-5 mr-3 text-danger"></i>
+                            </a>
+                            <a class="fb-ic icon">
+                                <i class="fab fa-facebook-f fa-lg white-text mr-md-5 mr-3 text-primary"></i>
+                            </a>
+                            <a class="li-ic icon">
+                                <i class="fab fa-linkedin-in fa-lg white-text mr-md-5 mr-3 text-info"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grid row-->
+            </div>
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">
+                © Budeshi Hub, 2020
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+        <script type="text/javascript" src="../node_modules/mdbootstrap/js/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" rel="stylesheet">
+        <script type="text/javascript" src="../node_modules/mdbootstrap/js/popper.min.js"></script>
+        <script type="text/javascript" src="../node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../node_modules/mdbootstrap/js/mdb.min.js"></script>
+        <script>
+            $("#dob").datepicker({
+                // format: "yyyy",
+                // viewMode: "years", 
+                // minViewMode: "years"
+            });
+        </script>
+    </body>
+</html>
