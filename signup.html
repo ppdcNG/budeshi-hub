@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Budeshi Hub</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+        <link rel="stylesheet" href="node_modules/mdbootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/mdbootstrap/css/mdb.min.css">
+        <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
+        <link rel="stylesheet" href="./index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+
+        <style>
+            body {
+                background-color: #fff !important;
+            }
+            #login-form {
+                background-color: #eee !important;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <!--Navbar -->
+            <nav class="mb-1 navbar navbar-expand-lg navbar-dark white">
+                <a class="navbar-brand h3 pb-0" href="#">
+                    <img
+                        src="./budeshi-logo.png"
+                        width="40"
+                        alt="budeshi-logo"
+                        class="img-fluid"
+                    >
+                    budeshi hub
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarSupportedContent-333"
+                    aria-controls="navbarSupportedContent-333"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                Home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto nav-flex-icons">
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light">
+                                <i class="fas fa-home"></i>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a
+                                class="nav-link dropdown-toggle"
+                                id="navbarDropdownMenuLink-333"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                            >
+                                <i class="fas fa-envelope"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                                <a class="dropdown-item" href="#">Message 1</a>
+                                <a class="dropdown-item" href="#">Message 2</a>
+                                <a class="dropdown-item" href="#">Message 3</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link waves-effect waves-light" href="./pages/profile.html">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!--/.Navbar -->
+        </header>
+        <main>
+            <div class="flex-center" style="margin-bottom: -30px;">
+                <img src="./budeshi-logo.png" alt="budeshi_logo" class="img-responsive" width="100">
+            </div>
+            <section class="container mt-2 flex-center">
+                <form id="login-form" class="shadow text-center white mt-4 col-md-8 border border-light p-5" action="#!">
+                    <p class="h4 mb-4 text-left">Register</p>
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        class="form-control mb-4"
+                        placeholder="E-mail"
+                    >
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        class="form-control mb-4"
+                        placeholder="Password"
+                    >
+                    <label for="password2">Confirm Password</label>
+                    <input
+                        type="password2"
+                        id="password"
+                        class="form-control mb-4"
+                        placeholder="Confirm Password"
+                    >
+
+                    <div class="text-center">
+                        <button class="btn btn-custom-green col-md-4 btn-md my-4" type="submit">Register</button>
+                        <p>
+                            Already have an account?<br/>
+                            <a href="./login.html" class="btn btn-md btn-info col-md-4">Login</a>
+                        </p>
+                    </div>
+
+                    <!-- Social register -->
+                    <p>or sign register with:</p>
+                    <a href="#" class="mx-2" role="button">
+                        <i class="fab fa-facebook-f light-blue-text"></i>
+                    </a>
+                    <a href="#" class="mx-2" role="button">
+                        <i class="fab fa-twitter light-blue-text"></i>
+                    </a>
+                    <a href="#" class="mx-2" role="button">
+                        <i class="fab fa-linkedin-in light-blue-text"></i>
+                    </a>
+                    <a href="#" class="mx-2" role="button">
+                        <i class="fab fa-github light-blue-text"></i>
+                    </a>
+                    <hr/>
+                    <div class="text-center">
+                        <p>By clicking
+                            <em>Register</em> you agree to our
+                            <a href="" target="_blank">terms of service</a>
+                    </div>
+                </form>
+            </section>
+        </main>
+        <br>
+        <br>
+        <br>
+
+        <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" rel="stylesheet">
+        <script type="text/javascript" src="node_modules/mdbootstrap/js/popper.min.js"></script>
+        <script type="text/javascript" src="node_modules/mdbootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="node_modules/mdbootstrap/js/mdb.min.js"></script>
+        <script>
+            $("#year").datepicker({
+                format: "yyyy",
+                viewMode: "years", 
+                minViewMode: "years"
+            });
+        </script>
+    </body>
+</html>
