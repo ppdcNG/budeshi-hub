@@ -11,14 +11,15 @@
         <link rel="stylesheet" href="node_modules/mdbootstrap/css/style.css">
         <link rel="stylesheet" href="./index.css">
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-
         <style>
             body {
                 background-color: #fff !important;
             }
             #login-form {
-                background-color: #eee !important;
+                background-color: #f5f5f5 !important;
             }
+            #login-form { text-align:center }
+            label, input{ display: inline-block }
         </style>
     </head>
     <body>
@@ -87,68 +88,55 @@
             <!--/.Navbar -->
         </header>
         <main>
-            <div class="flex-center" style="margin-bottom: -30px;">
-                <img src="./budeshi-logo.png" alt="budeshi_logo" class="img-responsive" width="100">
+            <div class="flex-center mt-3" style="margin-bottom:-20px">
+                <img
+                    src="./budeshi-logo.png"
+                    alt="budeshi_logo"
+                    class="img-responsive"
+                    width="100"
+                >
             </div>
             <section class="container mt-2 flex-center">
-                <form id="login-form" class="shadow text-center white mt-4 col-md-8 border border-light p-5" action="#!">
-                    <p class="h4 mb-4 text-left">Login</p>
-                    <label for="email">Email</label>
-                    <input
-                        type="email"
-                        id="email"
-                        class="form-control mb-4"
-                        placeholder="E-mail"
-                    >
-                    <label for="password">Password</label>
-                    <input
-                        type="password"
-                        id="password"
-                        class="form-control mb-4"
-                        placeholder="Password"
-                    >
-                    <div class="d-flex justify-content-around">
-                        <div>
-                            <div class="custom-control custom-checkbox">
-                                <input type="checkbox" class="custom-control-input" id="remember">
-                                <label class="custom-control-label" for="remember">Remember me</label>
+                <form id="login-form" class="shadow white mt-4 col-md-5 border border-light p-5">
+                    <section class="px-3">
+                        <h4 class="font-weight-bold mb-4 text-left">Login</h4>
+                        <div class="form-group">
+                            <label for="email" class="text-muted">Email</label>
+                            <input
+                                type="email"
+                                id="email"
+                                class="form-control"
+                                placeholder="E-mail"
+                            >
+                        </div>
+                        <div class="form-group">
+                            <label for="password" class="text-muted text-left">Password</label>
+                            <input
+                                type="password"
+                                id="password"
+                                class="form-control"
+                                placeholder="Password"
+                            >
+                        </div>
+                        <div class="d-flex justify-content-start">
+                            <div>
+                                <div class="custom-control custom-checkbox">
+                                    <input type="checkbox" class="custom-control-input" id="remember">
+                                    <label class="custom-control-label text-muted" for="remember">Remember password</label>
+                                </div>
                             </div>
                         </div>
-                        <div>
-                            <a href="">Forgot password?</a>
+                        <div class="text-center">
+                            <button class="btn primary__btn btn-block my-4" type="submit">Login</button>
+                            <button class="btn secondary__btn--dark btn-block my-4" type="submit">register</button>
                         </div>
-                    </div>
-
-                    <div class="text-center">
-                        <button class="btn btn-custom-green col-md-4 btn-md my-4" type="submit">Login</button>
-                        <p>
-                            Not a member?<br/>
-                            <a href="./signup.html" class="btn btn-md btn-info col-md-4">Register</a>
-                        </p>
-                    </div>
-
-                    <!-- Social login -->
-                    <p>or sign in with:</p>
-                    <a href="#" class="mx-2" role="button">
-                        <i class="fab fa-facebook-f light-blue-text"></i>
-                    </a>
-                    <a href="#" class="mx-2" role="button">
-                        <i class="fab fa-twitter light-blue-text"></i>
-                    </a>
-                    <a href="#" class="mx-2" role="button">
-                        <i class="fab fa-linkedin-in light-blue-text"></i>
-                    </a>
-                    <a href="#" class="mx-2" role="button">
-                        <i class="fab fa-github light-blue-text"></i>
-                    </a>
+                    </section>
                 </form>
-                <!-- Default form login -->
             </section>
         </main>
         <br>
         <br>
         <br>
-
         <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" rel="stylesheet">

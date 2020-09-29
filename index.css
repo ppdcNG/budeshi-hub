@@ -1,3 +1,38 @@
+/*  */
+/* BUTTONS */
+.btn {
+    border-radius: 6px;
+}
+.primary__btn {
+    background-color: #45FFAF;
+    color: #000;
+}
+.secondry__btn {
+    background-color: #fff;
+    color: #6fcf97;
+    border: 2px solid #6fcf97;
+    border-radius: 6px;
+}
+.secondary__btn--dark {
+    background-color: #4D4D4D;
+    color: #6fcf97;
+}
+.delete__btn {
+    background-color: #45FFAF;
+    color: #000;
+    border-radius: 6px;
+}
+.delete__btn--icon {
+    background-color: #45FFAF;
+    color: #000;
+    border-radius: 6px;
+}
+.edit__btn--icon {
+    background-color: #45FFAF;
+    color: #000;
+    border-radius: 6px;
+}
+/*  */
 body {
     background-color: #eee!important;
     font-family: 'Comfortaa', cursive;
@@ -8,7 +43,7 @@ nav a {
 }
 
 * .btn {
-    border-radius: 20px;
+    /* border-radius: 20px; */
 }
 
 .btn-custom-green {
