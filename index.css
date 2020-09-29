@@ -13,9 +13,10 @@
     border: 2px solid #6fcf97;
     border-radius: 6px;
 }
-.secondary__btn--dark {
+.secondary__btn--dark,
+a.btn.secondary__btn--dark {
     background-color: #4D4D4D;
-    color: #6fcf97;
+    color: #6fcf97 !important;
 }
 .delete__btn {
     background-color: #45FFAF;
