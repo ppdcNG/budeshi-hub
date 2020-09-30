@@ -37,14 +37,6 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">
-                                Home
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                    </ul>
                     <ul class="navbar-nav ml-auto nav-flex-icons">
                         <li class="nav-item">
                             <a class="nav-link waves-effect waves-light">
@@ -65,17 +57,23 @@
                                 <a class="dropdown-item border border-light" href="#">
                                     <div class="d-flex">
                                         <span class="mr-auto font-weight-bold">Approval</span>
-                                        <small class="text-muted"><em></em> 01/01/2020</small>
+                                        <small class="text-muted">
+                                            <em></em>
+                                            01/01/2020
+                                        </small>
                                     </div>
-                                    <hr class="m-0 p-0" />
+                                    <hr class="m-0 p-0">
                                     <p>Your new org. has been approved</p>
                                 </a>
                                 <a class="dropdown-item border border-light bg-light" href="#">
                                     <div class="d-flex">
                                         <span class="mr-auto font-weight-bold">Affiliation Request</span>
-                                        <small class="text-muted"><em></em> 01/01/2020</small>
+                                        <small class="text-muted">
+                                            <em></em>
+                                            01/01/2020
+                                        </small>
                                     </div>
-                                    <hr class="m-0 p-0" />
+                                    <hr class="m-0 p-0">
                                     <p>John Akim is requesting to affiliate...</p>
                                 </a>
                             </div>
@@ -92,86 +90,102 @@
         </header>
         <main>
             <section class="container mt-2">
-                <!-- Grid row -->
-                <div class="row">
-                    <!-- Grid column -->
-                    <div class="col-md-6 mb-2">
+                <!-- new test row  -->
+                <div class="row wow fadeIn">
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4 px-0">
                         <!--Card-->
-                        <div class="card white text-dark h-80">
+                        <div class="card h-100 bg-transparent border-0">
                             <!--Card content-->
-                            <div class="card-body text-center">
-                                <h4 class="text-muted m-0 p-0">Search & Filter</h4>
-                                <form class="text-center p-5" style="margin-top:-5vh;">
-                                    <div class="form-row">
-                                        <div class="col-md-6">
-                                            <label class="float-left" for="pub">Published</label>
-                                            <input
-                                                type="text"
-                                                id="pub"
-                                                class="form-control"
-                                                placeholder="Published"
-                                            >
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label class="float-left" for="year">Year</label>
-                                            <input id="year" class="form-control" placeholder="Year">
-                                        </div>
+                            <div class="card-body">
+                                <div class="card border-0 mb-4 secondary__color--grey">
+                                    <div class="card-body text-success pt-5 pb-3">
+                                        <p class="h4">Welcome, Sadiq</p>
+                                        <p class="">to your Budeshi Hub Dashboard. Start adding reports now!</p>
                                     </div>
-                                    <div class="form-row pt-2">
-                                        <label class="float-left" for="location">Location</label>
-                                        <input
-                                            type="text"
-                                            id="location"
-                                            class="form-control mb-4"
-                                            placeholder="Location"
-                                        >
+                                </div>
+                                <div class="card border-0">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-muted text-center mb-3">Summary</h5>
+                                        <hr class="m-0 mb-3 mx-auto" width="50%" />
+                                        <section class="d-flex justify-content-around">
+                                            <div class="text-center">
+                                                <h3>10  <i class="fas fa-chart-line"></i></h3>
+                                                <h6 class="text-muted">
+                                                    Total Projects
+                                                </h6>
+                                            </div>
+                                            <div class="text-center">
+                                                <h3>30  <i class="fas fa-file-alt"></i></h3>
+                                                <h6 class="text-muted">
+                                                    Total Published
+                                                </h6>
+                                            </div>
+                                        </section>
                                     </div>
-                                    <button class="btn btn-custom-green btn-block my-4" type="submit">Sign in</button>
-                                </form>
+                                </div>
                             </div>
                         </div>
                         <!--/.Card-->
                     </div>
-                    <!-- Grid column -->
-                    <!-- Grid column -->
-                    <div class="col-md-6 mb-2">
+                    <!--Grid column-->
+                    <!--Grid column-->
+                    <div class="col-md-6 mb-4 px-0">
                         <!--Card-->
-                        <div class="card white text-dark h-100">
+                        <div class="card bg-transparent border-0">
                             <!--Card content-->
-                            <div class="card-body text-center">
-                                <h4 class="card-title text-muted">Summary</h4>
-                                <section class="pt-3">
-                                    <h3>10</h3>
-                                    <h6 class="text-muted">
-                                        <i class="fas fa-chart-line fa-2x"></i>
-                                        &nbsp;&nbsp;Total Projects
-                                    </h6>
-                                    <hr>
-                                    <h3>30</h3>
-                                    <h6 class="text-muted">
-                                        <i class="fas fa-file-alt fa-2x"></i>
-                                        &nbsp;&nbsp;Total Published
-                                    </h6>
-                                </section>
+                            <div class="card-body">
+                                <!-- Material form subscription -->
+                                <div class="card h-100 border-0">
+                                    <h5 class="card-header text-muted text-center py-4">
+                                        <strong>Search & Filter</strong>
+                                    </h5>
+                                    <!--Card content-->
+                                    <div class="card-body px-lg-5">
+                                        <form class="text-center">
+                                            <div class="form-row">
+                                                <div class="col">
+                                                    <div class="md-form">
+                                                        <input type="text" id="materialRegisterFormFirstName" class="form-control">
+                                                        <label for="materialRegisterFormFirstName">Published</label>
+                                                    </div>
+                                                </div>
+                                                <div class="col">
+                                                    <div class="md-form">
+                                                        <input id="year" class="form-control">
+                                                        <label for="year">Year</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="md-form mt-3">
+                                                <input type="text" id="materialSubscriptionFormPasswords" class="form-control">
+                                                <label for="materialSubscriptionFormPasswords">Location</label>
+                                            </div>
+                                            <button class="btn primary__btn btn-rounded btn-block z-depth-0 my-4 waves-effect" type="submit">search</button>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- Material form subscription -->
                             </div>
                         </div>
                         <!--/.Card-->
                     </div>
-                    <!-- Grid column -->
+                    <!--Grid column-->
                 </div>
-                <!-- Grid row -->
+                <!-- new test row end  -->
             </section>
-            <section class="container mt-5">
+            <section class="container mt-3">
                 <div class="d-flex">
-                    <h4 class="mr-auto pl-5 pt-2">Projects</h4>
+                    <h4 class="mr-auto pl-5 pt-2 text-uppercase">projects</h4>
                     <button class="btn btn-custom-green btn-sm mr-5">Add A Project</button>
                 </div>
                 <section class="my-3">
-                    <div class="card">
+                    <div class="card border-0">
                         <div class="card-body pl-5">
-                            <h3 class="card-title my-2"><a href="./pages/project-details.html">Kaduna SUBEB project monitoring</a></h3>
+                            <h4 class="card-title my-2">
+                                <a class="text-dark" href="./pages/project-details.html">Kaduna SUBEB project monitoring</a>
+                            </h4>
                             <div class="d-flex justify-content-between pr-4 my-3">
-
                                 <div class="m-1">
                                     <span class="h6">Year:</span>
                                     <span class="text-muted">2020</span>
@@ -185,6 +199,7 @@
                                     <span class="text-muted">PPDC</span>
                                 </div>
                             </div>
+                            <hr>
                             <div class="d-flex justify-content-between row pr-5">
                                 <a class="card-link text-uppercase btn btn-sm col-sm-2 ml-3 btn-light">edit</a>
                                 <a class="card-link text-uppercase btn btn-sm col-sm-2 btn-custom-green">publish</a>
@@ -194,11 +209,12 @@
                     </div>
                 </section>
                 <section class="my-3">
-                    <div class="card">
+                    <div class="card border-0">
                         <div class="card-body pl-5">
-                            <h3 class="card-title my-2"><a href="./pages/project-details.html">Kaduna SUBEB project monitoring</a></h3>
+                            <h4 class="card-title my-2">
+                                <a class="text-dark" href="./pages/project-details.html">Kaduna SUBEB project monitoring</a>
+                            </h4>
                             <div class="d-flex justify-content-between pr-4 my-3">
-
                                 <div class="m-1">
                                     <span class="h6">Year:</span>
                                     <span class="text-muted">2020</span>
@@ -212,6 +228,7 @@
                                     <span class="text-muted">PPDC</span>
                                 </div>
                             </div>
+                            <hr>
                             <div class="d-flex justify-content-between row pr-5">
                                 <a class="card-link text-uppercase btn btn-sm col-sm-2 ml-3 btn-light">edit</a>
                                 <a class="card-link text-uppercase btn btn-sm col-sm-2 btn-custom-green">publish</a>
@@ -221,11 +238,12 @@
                     </div>
                 </section>
                 <section class="my-3">
-                    <div class="card">
+                    <div class="card border-0">
                         <div class="card-body pl-5">
-                            <h3 class="card-title my-2"><a href="./pages/project-details.html">Kaduna SUBEB project monitoring</a></h3>
+                            <h4 class="card-title my-2">
+                                <a class="text-dark" href="./pages/project-details.html">Kaduna SUBEB project monitoring</a>
+                            </h4>
                             <div class="d-flex justify-content-between pr-4 my-3">
-
                                 <div class="m-1">
                                     <span class="h6">Year:</span>
                                     <span class="text-muted">2020</span>
@@ -239,6 +257,7 @@
                                     <span class="text-muted">PPDC</span>
                                 </div>
                             </div>
+                            <hr>
                             <div class="d-flex justify-content-between row pr-5">
                                 <a class="card-link text-uppercase btn btn-sm col-sm-2 ml-3 btn-light">edit</a>
                                 <a class="card-link text-uppercase btn btn-sm col-sm-2 btn-custom-green">publish</a>
@@ -247,11 +266,16 @@
                         </div>
                     </div>
                 </section>
-
+                <div class="d-flex justify-content-between">
+                    <button class="btn secondary__btn btn-md" disabled>&larr; previous</button>
+                    <button class="btn primary__btn btn-md">next &rarr;</button>
+                </div>
             </section>
         </main>
-        <br/><br/><br/>
-        <footer class="page-footer font-small primary__color--green text-dark pt-5 mt-5">
+        <br>
+        <br>
+        <br>
+        <footer class="page-footer font-small white text-dark pt-5 mt-5">
             <div class="container">
                 <!-- Grid row-->
                 <div class="row">
@@ -291,7 +315,6 @@
             </div>
             <!-- Copyright -->
         </footer>
-
         <!-- Footer -->
         <script type="text/javascript" src="node_modules/mdbootstrap/js/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>

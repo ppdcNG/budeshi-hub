@@ -2,6 +2,9 @@
 .primary__color--green {
     background-color: #45FFAF;
 }
+.secondary__color--grey {
+    background-color: #4D4D4D;
+}
 /* BUTTONS */
 .btn {
     border-radius: 6px;
@@ -10,10 +13,10 @@
     background-color: #45FFAF;
     color: #000;
 }
-.secondry__btn {
+.secondary__btn {
     background-color: #fff;
     color: #6fcf97;
-    border: 2px solid #6fcf97;
+    border: 1px solid #6fcf97;
     border-radius: 6px;
 }
 .secondary__btn--dark,
