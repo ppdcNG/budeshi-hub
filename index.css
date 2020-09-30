@@ -1,4 +1,7 @@
 /*  */
+.primary__color--green {
+    background-color: #45FFAF;
+}
 /* BUTTONS */
 .btn {
     border-radius: 6px;
