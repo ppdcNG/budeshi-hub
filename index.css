@@ -80,13 +80,15 @@ label {
 }
 
 #report-navs .nav-item.nav-link {
+    /* background-color: #33B5E5; */
+    /* color: #fff !important; */
     background-color: #45FFAF;
     color: #4d4d4d !important;
-    font-weight: bolder;
 }
 #report-navs .nav-item.nav-link.active {
     background-color: #fff;
     border-color: #45FFAF !important;
+    /* color: #33B5E5 !important; */
 }
 
 /*  */
