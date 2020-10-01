@@ -17,7 +17,7 @@ $(function () {
     $('.action-message').popover({ 
         html : true,
         placement: 'left',
-        title: 'Request',
+        title: 'Affiliation Request',
         trigger: 'focus',
         content: function() {
           return $('#message_content2').html();
