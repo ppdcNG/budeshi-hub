@@ -25,19 +25,20 @@ a.btn.secondary__btn--dark {
     color: #6fcf97 !important;
 }
 .delete__btn {
-    background-color: #45FFAF;
+    background-color: #FF4D00;
     color: #000;
     border-radius: 6px;
 }
 .delete__btn--icon {
-    background-color: #45FFAF;
-    color: #000;
+    background-color: #fff;
+    color: #FF4D00;
     border-radius: 6px;
 }
 .edit__btn--icon {
-    background-color: #45FFAF;
-    color: #000;
+    background-color: #fff;
+    color: #6fcf97;
     border-radius: 6px;
+    border: 1px solid #6fcf97;
 }
 /*  */
 body {
