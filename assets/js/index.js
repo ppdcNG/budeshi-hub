@@ -23,4 +23,15 @@ $(function () {
           return $('#message_content2').html();
         }
     });
+
+    $("#community-report-btn").click(function() {
+      $("#nav-community-tab").trigger('click');
+      $("#communityForm").trigger('reset');
+    });
+
+    $("#stakeholder-report-btn").click(function() {
+      $("#nav-stakeholder-tab").trigger('click');
+      $("#stakeholderForm").trigger('reset');
+    });
+
 });

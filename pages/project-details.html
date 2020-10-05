@@ -95,10 +95,11 @@
                     <section class="py-4 px-1 white text-dark">
                         <h5>
                             Report List
-                            <a href="./monitoring-report.html" class="btn btn-sm edit__btn--icon">
-                                <i class="fas fa-plus"></i>
-                            </a>
                         </h5>
+                        <div class="d-flex justify-content-around">
+                            <button class="btn shadow-none edit__btn--icon btn-sm" id="stakeholder-report-btn">Add stakeholder report</button>
+                            <button class="btn shadow-none edit__btn--icon btn-sm" id="community-report-btn">Add community visit report</button>
+                        </div>
                         <hr>
                         <ul class="list-group list-group-flush">
                             <li class="list-group-item mt-2">
@@ -266,14 +267,7 @@
                             >
                                 <div class="mt-2">
                                     <h5>Stakeholder Engagement Report</h5>
-                                    <form class="text-center border border-light p-5">
-                                        <label for="title">Title of Engagement</label>
-                                        <input
-                                            type="text"
-                                            id="title"
-                                            class="form-control mb-4"
-                                            placeholder=""
-                                        >
+                                    <form class="text-center border border-light p-5" id="stakeholderForm">
                                         <label for="title">Date of Engagement</label>
                                         <input id="engagement-date" class="form-control mb-4" placeholder="">
                                         <label>How did Engagement happen?</label>
@@ -292,7 +286,7 @@
                                                 placeholder="Description"
                                             ></textarea>
                                         </div>
-                                        <div class="form-group">
+                                        <div class="form-group pt-1">
                                             <label for="desc">General Remark / Observation</label>
                                             <textarea
                                                 class="form-control rounded-0"
@@ -320,7 +314,7 @@
                             >
                                 <div class="mt-2">
                                     <h5>Community Visit Report</h5>
-                                    <form class="text-center border border-light p-5">
+                                    <form class="text-center border border-light p-5" id="communityForm">
                                         <label for="title">Date of Visit</label>
                                         <input id="visit-date" class="form-control mb-4" placeholder="">
                                         <label>Status of Project</label>
@@ -421,7 +415,7 @@
                                             </div>
                                         </div>
                                         <!-- Person Modal  -->
-                                        <div class="form-group">
+                                        <div class="form-group pt-4">
                                             <label for="desc">General Remark / Observation</label>
                                             <textarea
                                                 class="form-control rounded-0"
@@ -494,6 +488,7 @@
         <script type="text/javascript" src="../node_modules/mdbootstrap/js/popper.min.js"></script>
         <script type="text/javascript" src="../node_modules/mdbootstrap/js/bootstrap.min.js"></script>
         <script type="text/javascript" src="../node_modules/mdbootstrap/js/mdb.min.js"></script>
+        <script src="../assets/js/index.js"></script>
         <script>
             $("#engagement-date").datepicker();
             $("#visit-date").datepicker();
