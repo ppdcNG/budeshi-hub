@@ -223,7 +223,7 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <form>
+                                            <form id="newOrgForm">
                                                 <label>Type of organisation</label>
                                                 <select class="browser-default custom-select mb-4">
                                                     <option value="" disabled>Choose option</option>
@@ -268,119 +268,44 @@
                                                             placeholder="Type here"
                                                         ></textarea>
                                                     </div>
-                                                    <div class="form-row mb-4">
-                                                        <div class="col">
-                                                            <label for="town">Town</label>
-                                                            <input
-                                                                type="text"
-                                                                id="town"
-                                                                class="form-control"
-                                                                placeholder="Enter Town"
-                                                            >
-                                                        </div>
-                                                        <div class="col">
-                                                            <label for="state">State</label>
-                                                            <input
-                                                                type="text"
-                                                                id="state"
-                                                                class="form-control"
-                                                                placeholder="State"
-                                                            >
-                                                        </div>
-                                                    </div>
+                                                    <label for="state">State</label>
+                                                    <input
+                                                        type="text"
+                                                        id="state"
+                                                        class="form-control"
+                                                        placeholder="State"
+                                                    >
                                                 </div>
                                                 <div class="flex-center">
                                                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                                                     <button type="button" class="btn btn-custom-green" id="addOrgNext">next</button>
                                                 </div>
                                             </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- New org. modal  -->
-                            <!-- Next >> Verify org. modal -->
-                            <div
-                                class="modal fade"
-                                id="verifyOrg"
-                                tabindex="-1"
-                                role="dialog"
-                                aria-labelledby="verifyOrgLabel"
-                                aria-hidden="true"
-                            >
-                                <div class="modal-dialog modal-dialog-scrollable" role="document">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="verifyOrgLabel">Verify Organisation</h5>
-                                            <button
-                                                type="button"
-                                                class="close"
-                                                data-dismiss="modal"
-                                                aria-label="Close"
-                                            >
-                                                <span aria-hidden="true">&times;</span>
-                                            </button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form class="text-center">
-                                                <div class="form-row mb-4">
-                                                    <div class="col-md-6">
-                                                        <label for="legalname">Legal name</label>
-                                                        <input
-                                                            type="text"
-                                                            id="legalname"
-                                                            class="form-control"
-                                                            placeholder="Legal name"
-                                                        >
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="abbr">Abbreviation</label>
-                                                        <input
-                                                            type="text"
-                                                            id="abbr"
-                                                            class="form-control"
-                                                            placeholder="Abbreviation"
-                                                        >
-                                                    </div>
-                                                </div>
-                                                
+                                            <!-- Hidden Verify Org Form  -->
+                                            <form class="text-center" id="verifyOrgForm" style="display:none;">
                                                 <div class="form-group">
                                                     <label for="rcnumber">RC Number</label>
-                                                    <input type="number" id="rcnumber" class="form-control" placeholder="RC Number">
-                                                </div>
-                            
-                                                <div class="form-group">
-                                                    <label for="address">Address</label>
-                                                    <textarea
-                                                        class="form-control rounded-0"
-                                                        id="address"
-                                                        rows="3"
-                                                        placeholder="Address"
-                                                    ></textarea>
-                                                </div>
-                                                <div class="form-group">
-                                                    <label for="contact">Contact point</label>
-                                                    <textarea
-                                                        class="form-control rounded-0"
-                                                        id="contact"
-                                                        rows="2"
-                                                        placeholder="Contact point"
-                                                    ></textarea>
+                                                    <input
+                                                        type="number"
+                                                        id="rcnumber"
+                                                        class="form-control"
+                                                        placeholder="RC Number"
+                                                    >
                                                 </div>
                                                 <label for="upload-file" class="mt-2 ml-2">Upload CAC Certificate</label>
                                                 <div class="file-upload-wrapper border border-light p-5">
                                                     <input type="file" id="upload-file" class="file-upload col-md-12">
                                                 </div>
-                            
-                                                <div class="text-right">
-                                                    <button class="btn btn-custom-green col-md-3 my-4 btn-md">save</button>
+                                                <div class="flex-center">
+                                                    <button type="btn" class="btn secondary__btn col-md-3 my-4 btn-md" id="verifyOrgBackBtn">&larr; back</button>
+                                                    <button class="btn primary__btn col-md-3 my-4 btn-md">save</button>
                                                 </div>
                                             </form>
+                                            <!-- Hidden Verify Org Form  -->
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <!-- Next >> Verify org. modal -->
                         </div>
                     </div>
                     <div class="text-right pr-5">
