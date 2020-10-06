@@ -37,7 +37,7 @@ $(function () {
   });
 
   // populate dropdown with states 
-  let statesDropdown = $("#state");
+  let statesDropdown = $(".state");
 
   statesDropdown.empty();
   statesDropdown.append('<option selected="true" disabled>Choose State</option>');
