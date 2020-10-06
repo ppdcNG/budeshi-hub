@@ -41,6 +41,7 @@ a.btn.secondary__btn--dark {
     border: 1px solid #6fcf97;
 }
 /*  */
+/*  */
 body {
     background-color: #eee!important;
     font-family: 'Comfortaa', cursive;
@@ -48,10 +49,6 @@ body {
 
 nav a {
     color: #4f4f4f !important;
-}
-
-* .btn {
-    /* border-radius: 20px; */
 }
 
 .btn-custom-green {
@@ -69,6 +66,10 @@ a.icon i {
     background-color: #fff;
     border-radius: 50%;
     box-shadow: 0px 0px 15px #d5d5d5
+}
+
+#project-list h4 > a:hover {
+    color: #45FFAF !important;
 }
 
 /*  */

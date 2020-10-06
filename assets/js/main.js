@@ -37,17 +37,17 @@ $(function () {
   });
 
   // populate dropdown with states 
-  let dropdown = $("#state");
+  let statesDropdown = $("#state");
 
-  dropdown.empty();
-  dropdown.append('<option selected="true" disabled>Choose State</option>');
-  dropdown.prop('selectedIndex', 0);
+  statesDropdown.empty();
+  statesDropdown.append('<option selected="true" disabled>Choose State</option>');
+  statesDropdown.prop('selectedIndex', 0);
 
   for (let s in states) {
     let state = states[s];
     let val = state.substr(0, 3).toLowerCase();
 
-    dropdown.append(`<option value='${val}'>${state}</option>`);
+    statesDropdown.append(`<option value='${val}'>${state}</option>`);
   }
 
 
