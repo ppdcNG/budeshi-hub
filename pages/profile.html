@@ -203,7 +203,7 @@
                                 id="newOrgModal"
                                 tabindex="-1"
                                 role="dialog"
-                                aria-labelledby="exampleModalLabel"
+                                aria-labelledby="newOrgModal"
                                 aria-hidden="true"
                             >
                                 <div class="modal-dialog" role="document">
@@ -220,66 +220,70 @@
                                             </button>
                                         </div>
                                         <div class="modal-body">
-                                            <form id="newOrgForm">
-                                                <label>Type of organisation</label>
-                                                <select class="browser-default custom-select mb-4">
-                                                    <option value="" disabled>Choose option</option>
-                                                    <option value="">Govt.</option>
-                                                    <option value="">CSO</option>
-                                                    <option value="">NGO</option>
-                                                    <option value="">Private Sector</option>
-                                                    <option value="">Media</option>
-                                                    <option value="">Professional Bodies</option>
-                                                </select>
-                                                <label for="name">Name of Organisation</label>
-                                                <input id="name" class="form-control mb-4" placeholder="Name of org.">
-                                                <div class="form-row mb-4 border border-light p-3">
-                                                    <p>Contact</p>
-                                                    <div class="form-row mb-4">
-                                                        <div class="col">
-                                                            <label for="email">Email</label>
-                                                            <input
-                                                                type="email"
-                                                                id="email"
-                                                                class="form-control"
-                                                                placeholder="Email"
-                                                            >
+                                            <!-- Add org form  -->
+                                            <section id="orgForm">
+                                                <form id="newOrgForm">
+                                                    <label>Type of organisation</label>
+                                                    <select class="browser-default custom-select mb-4">
+                                                        <option value="" disabled>Choose option</option>
+                                                        <option value="">Govt.</option>
+                                                        <option value="">CSO</option>
+                                                        <option value="">NGO</option>
+                                                        <option value="">Private Sector</option>
+                                                        <option value="">Media</option>
+                                                        <option value="">Professional Bodies</option>
+                                                    </select>
+                                                    <label for="name">Name of Organisation</label>
+                                                    <input id="name" class="form-control mb-4" placeholder="Name of org.">
+                                                    <div class="form-row mb-4 border border-light p-3">
+                                                        <p>Contact</p>
+                                                        <div class="form-row mb-4">
+                                                            <div class="col">
+                                                                <label for="email">Email</label>
+                                                                <input
+                                                                    type="email"
+                                                                    id="email"
+                                                                    class="form-control"
+                                                                    placeholder="Email"
+                                                                >
+                                                            </div>
+                                                            <div class="col">
+                                                                <label for="website">Website</label>
+                                                                <input
+                                                                    type="text"
+                                                                    id="website"
+                                                                    class="form-control"
+                                                                    placeholder="Website"
+                                                                >
+                                                            </div>
                                                         </div>
-                                                        <div class="col">
-                                                            <label for="website">Website</label>
-                                                            <input
-                                                                type="text"
-                                                                id="website"
-                                                                class="form-control"
-                                                                placeholder="Website"
-                                                            >
+                                                        <div class="form-group mt-2">
+                                                            <label for="address">Address</label>
+                                                            <textarea
+                                                                class="form-control rounded-0"
+                                                                id="address"
+                                                                rows="3"
+                                                                cols="100"
+                                                                placeholder="Type here"
+                                                            ></textarea>
                                                         </div>
+                                                        <label for="state">State</label>
+                                                        <input
+                                                            type="text"
+                                                            id="state"
+                                                            class="form-control"
+                                                            placeholder="State"
+                                                        >
                                                     </div>
-                                                    <div class="form-group mt-2">
-                                                        <label for="address">Address</label>
-                                                        <textarea
-                                                            class="form-control rounded-0"
-                                                            id="address"
-                                                            rows="3"
-                                                            cols="100"
-                                                            placeholder="Type here"
-                                                        ></textarea>
+                                                    <div class="flex-center">
+                                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                        <button type="button" class="btn btn-custom-green" id="addOrgNext">next</button>
                                                     </div>
-                                                    <label for="state">State</label>
-                                                    <input
-                                                        type="text"
-                                                        id="state"
-                                                        class="form-control"
-                                                        placeholder="State"
-                                                    >
-                                                </div>
-                                                <div class="flex-center">
-                                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-custom-green" id="addOrgNext">next</button>
-                                                </div>
-                                            </form>
+                                                </form>
+                                            </section>
+                                            <!-- Add org form  -->
                                             <!-- Hidden Verify Org Form  -->
-                                            <form class="text-center" id="verifyOrgForm" style="display:none;">
+                                            <form class="text-center" id="verifyOrgForm" style="display:none !important;">
                                                 <div class="form-group">
                                                     <label for="rcnumber">RC Number</label>
                                                     <input

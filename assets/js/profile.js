@@ -1,13 +1,14 @@
 $(function () {
-    $("#addOrgNext").click(function () {
-        $("#newOrgForm").css('display', 'none');
+    $("#addOrgNext").click(function (e) {
+        e.preventDefault();
+        $("#orgForm").css('display', 'none');
         $("#verifyOrgForm").css('display', 'block');
     });
 
     $("#verifyOrgBackBtn").click(function (e) {
         e.preventDefault();
         $("#verifyOrgForm").css('display', 'none');
-        $("#newOrgForm").css('display', 'block');
+        $("#orgForm").css('display', 'block');
     });
 
 });
