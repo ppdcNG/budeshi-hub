@@ -301,7 +301,9 @@
                                         </div>
                                         <label for="upload-file" class="ml-3 my-2">Add supporting document</label>
                                         <div class="file-upload-wrapper border border-light p-5">
-                                            <input type="file" id="upload-file" class="file-upload">
+                                            <!-- <input type="file" id="upload-file" class="file-upload"> -->
+                                            <input type="file" id="file-input" accept="image/jpeg,image/png,application/pdf" class="file-upload" multiple>
+                                            <div class="row mt-3 p-3" id="preview"></div>
                                         </div>
                                         <!-- Send button -->
                                         <div class="text-right">
@@ -502,6 +504,7 @@
         <script type="text/javascript" src="../node_modules/mdbootstrap/js/mdb.min.js"></script>
         <script src="../assets/states_list.js"></script>
         <script src="../assets/js/main.js"></script>
+        <script src="../assets/js/upload_preview.js"></script>
         <script>
             $("#engagement-date").datepicker();
             $("#visit-date").datepicker();
