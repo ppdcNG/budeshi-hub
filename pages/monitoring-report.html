@@ -57,17 +57,21 @@
                                 <a class="dropdown-item border border-light" href="#">
                                     <div class="d-flex">
                                         <span class="mr-auto font-weight-bold">Approval</span>
-                                        <small class="text-muted"><em></em> 01/01/2020</small>
+                                        <small class="text-muted">
+                                            <em></em> 01/01/2020
+                                        </small>
                                     </div>
-                                    <hr class="m-0 p-0" />
+                                    <hr class="m-0 p-0">
                                     <p>Your new org. has been approved</p>
                                 </a>
                                 <a class="dropdown-item border border-light bg-light" href="#">
                                     <div class="d-flex">
                                         <span class="mr-auto font-weight-bold">Affiliation Request</span>
-                                        <small class="text-muted"><em></em> 01/01/2020</small>
+                                        <small class="text-muted">
+                                            <em></em> 01/01/2020
+                                        </small>
                                     </div>
-                                    <hr class="m-0 p-0" />
+                                    <hr class="m-0 p-0">
                                     <p>John Akim is requesting to affiliate...</p>
                                 </a>
                             </div>
@@ -95,7 +99,6 @@
                             placeholder="Type here"
                         ></textarea>
                     </div>
-
                     <div class="border border-light p-3">
                         <p class="text-left">Add Supporting Documents</p>
                         <div class="file-upload-wrapper border border-light flex-center p-5">
@@ -122,20 +125,18 @@
                             </div>
                             <div class="col-md-4">
                                 <label for="date">Date of Issue</label>
-                                <input
-                                    id="date"
-                                    class="form-control"
-                                    placeholder="Date"
-                                >
+                                <input id="date" class="form-control" placeholder="Date">
                             </div>
                         </div>
-                        
                         <div class="form-group">
                             <label for="title">Title</label>
-                            <input type="title" id="rcnumber" class="form-control" placeholder="Title">
+                            <input
+                                type="title"
+                                id="rcnumber"
+                                class="form-control"
+                                placeholder="Title"
+                            >
                         </div>
-    
-    
                         <div class="form-group">
                             <label for="desc">Description</label>
                             <textarea
@@ -146,7 +147,6 @@
                             ></textarea>
                         </div>
                     </div>
-
                     <div class="text-right">
                         <button class="btn btn-custom-green col-3 my-4 btn-md">save</button>
                     </div>
@@ -197,12 +197,16 @@
             <!-- Copyright -->
         </footer>
         <!-- Footer -->
-        <script type="text/javascript" src="../node_modules/mdbootstrap/js/jquery.min.js"></script>
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Bootstrap tooltips -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+        <!-- Bootstrap core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <!-- MDB core JavaScript -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/css/bootstrap-datepicker.css" rel="stylesheet">
-        <script type="text/javascript" src="../node_modules/mdbootstrap/js/popper.min.js"></script>
-        <script type="text/javascript" src="../node_modules/mdbootstrap/js/bootstrap.min.js"></script>
-        <script type="text/javascript" src="../node_modules/mdbootstrap/js/mdb.min.js"></script>
         <script>
             $("#date").datepicker();
         </script>
