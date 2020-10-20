@@ -50,5 +50,29 @@ $(function () {
     statesDropdown.append(`<option value='${val}'>${state}</option>`);
   }
 
+  $("#publish-affiliate-btn").click(function() {
+    $("#choose-org").toggle();
+    $("#publish-without-affiliate").toggle();
+  });
+
+  $("#publish-without-affiliate").click(function() {
+    $("#affiliate-org").toggle();
+    $("#confirm-publish").toggle();
+  })
+
+  $("#organisations").change(function() {
+    $("#affiliate-org").toggle();
+    $("#choose-org").toggle();
+    $("#confirm-publish").toggle();
+  });
+
+  // publish modal on close 
+  $('#publishModal').on('hidden.bs.modal', function () {
+    $("#affiliate-org").css("display", "block");
+    $("#publish-without-affiliate").css("display", "inline");
+    $("#choose-org").css("display", "none");
+    $("#confirm-publish").css("display", "none");
+  });
+
 
 }); // jQuery end
